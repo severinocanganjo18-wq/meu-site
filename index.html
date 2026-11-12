@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sérgio Boy - Intermediário de Negócios | Huambo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif
+    }
+
+    body {
+      background: #02252f;
+      color: #222
+    }
+
+    header {
+      background: #ffffff;
+      color: #000000;
+      padding: 30px 20px;
+      text-align: center
+    }
+
+    header h1 {
+      font-size: 38px
+    }
+
+    header p {
+      font-weight: bold;
+      margin-top: 6px
+    }
+
+    .container {
+      max-width: 780px;
+      margin: auto;
+      padding: 16px
+    }
+
+    .card {
+      background: #12d6d3;
+      padding: 20px;
+      border-radius: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07)
+    }
+
+    .card h2 {
+      color: #0b3d2e;
+      margin-bottom: 10px
+    }
+
+    .card p {
+      line-height: 1.65
+    }
+
+    .price {
+      color: #0b7a3e;
+      font-weight: bold;
+      margin-top: 10px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px
+    }
+
+    .mini {
+      background: #f8f8f8;
+      padding: 14px;
+      border-radius: 10px;
+      text-align: center
+    }
+
+    .mini b {
+      display: block;
+      margin-bottom: 4px
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      padding: 17px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 10px 0
+    }
+
+    .btn-wpp {
+      background: #25d2d3
+    }
+
+    .btn2 {
+      background: #0b3d2e
+    }
+
+    .btn-tiktok {
+      background: #000;
+      border: 2px solid #000
+    }
+
+    .btn-tiktok span {
+      color: #25F4EE
+    }
+
+    .btn-tiktok b {
+      color: #FE2C55
+    }
+
+    .btn-call {
+      background: #ff9800
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border-radius: 9px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      resize: none;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: bold
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #777
+    }
+
+    .logo {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      margin: 15px auto;
+      cursor: pointer;
+      overflow: hidden;
+      border: 3px solid #00e4ff
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .intro {
+      text-align: center
+    }
+
+    .tiktok-box {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      border-radius: 14px;
+      margin-bottom: 14px;
+      text-align: center
+    }
+
+    .tiktok-box h2 {
+      color: #fff
+    }
+
+    .tiktok-box p {
+      margin: 10px 0
+    }
+
+    @media(max-width:500px) {
+      .grid {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <header>
+      <h1>SÉRGIO BOY</h1>
+      <p>INTERMEDIÁRIO DE NEGÓCIOS </p>
+      <p>Huambo </p>
+      <p>Compra • Venda • Intermediação • Fiscalização de obras</p>
+    </header>
+  </center>
+  <div class="container">
+
+    <div class="intro">
+      <p style="font-size:19px;font-weight:bold;margin-top:5px; color: white;">Bem-vindo à minha página oficial!</p>
+      <p style="color: white;">Segue-me no TikTok para veres os vídeos das obras e negócios.</p>
+      <div class="logo" onclick="document.getElementById('logoInput').click()">
+        <img id="logoImg" src="./ Sergio.png" style="display:block">
+      </div>
+      <input type="file" id="logoInput" accept="image/*" style="display:none" onchange="trocarLogo(event)">
+
+    </div>
+
+
+
+
+
+    <!-- BOTÃO TIKTOK PRINCIPAL -->
+    <div class="tiktok-box">
+      <h2>🎵 MEU TIKTOK OFICIAL</h2>
+      <p>Vê os meus vídeos de obras, terrenos e negócios no Huambo.<br><b>@severinocotingoca</b></p>
+      <a class="btn btn-tiktok" href="https://www.tiktok.com/@severinocotingoca" target="_blank" rel="noopener">▶
+        <span>MEU</span> <b>TIKTOK</b> - CLICA AQUI</a>
+      <p style="font-size:13px;color:#ccc">Ao clicar, vai direto para o meu perfil do TikTok.</p>
+    </div>
+
+    <div class="card">
+      <h2> Quem Sou Eu?</h2>
+      <p>Eu sou o <b>Sérgio Boy</b> do Cachiungo, Huambo. Ajudo quem está em Angola e quem vive fora a comprar, vender e
+        controlar negócios sem ser burlado. Eu vou no local, filmo e te mostro a verdade.</p>
+    </div>
+
+    <div class="card">
+      <h2> O que eu faço por ti? </h2>
+      <div class="grid">
+        <div class="mini"><b> Material de Obra</b>Betão, cimento, ferro, bloco, areia</div>
+        <div class="mini"><b> Casas & Terrenos</b>Compra, venda e arrendamento</div>
+        <div class="mini"><b> Fiscalização</b>Filmo a tua obra 2x por semana</div>
+        <div class="mini"><b> Unitel Money</b>Depósito, levantamento, conta</div>
+        <div class="mini"><b> Motos & Carros</b>Encontro bom preço</div>
+        <div class="mini"><b> Produtos</b>Cremes, perfumes, telefones, etc.</div>
+      </div>
+      <p class="price">Comissão 5% a 10% - Só pagas se fechar negócio</p>
+    </div>
+
+    <div class="card">
+      <h2> Fiscalização Para Quem Vive Fora</h2>
+      <p>Estás em Portugal, França, Brasil ou Luanda e tens obra no Huambo? Eu sou os teus olhos lá.</p>
+      <p> Visita 2x por semana<br> Vídeo + fotos + relatório<br> Controlo de material e pedreiro</p>
+      <p class="price">15.000 Kz / semana - 1ª Visita GRÁTIS</p>
+    </div>
+
+    <div class="card">
+      <h2> Preços Hoje - Huambo</h2>
+      <p> Betão - preço por m³<br> Cimento - preço por saco<br> Bloco - preço por unidade<br> Ferro - preço por vara<br>
+        Terreno na Sede - a combinar</p>
+      <p class="price">Pede o preço de hoje no WhatsApp.</p>
+    </div>
+
+    <div class="card">
+      <h2> O Que Dizem Os Clientes</h2>
+      <p><b>Sérgio - Huambo:</b> "Mandou vídeo da obra toda semana, confiei."<br><br><b>Canganjo - Portugal:</b>
+        "Comprei terreno sem vir a Angola, tudo legal."<br><br><b>Severino - Huambo:</b> "Arranjou betão mais barato que
+        na loja."</p>
+    </div>
+
+    <div class="card">
+      <h2> Pedir Orçamento</h2>
+      <label>Teu Nome</label>
+      <input type="text" id="nome" placeholder="Ex: João Manuel">
+      <label>O Que Precisas?</label>
+      <select id="servico">
+        <option>Intermediário</option>
+        <option>Fiscalização de obra</option>
+        <option>Compra / Venda de casa ou terreno</option>
+        <option>Material de construção</option>
+        <option>Unitel Money / Express</option>
+      </select>
+      <label>Assunto</label>
+      <select id="assunto">
+        <option>Obras em construção no Huambo</option>
+        <option>Preços de betão e material</option>
+        <option>Dicas para não seres burlado</option>
+        <option>Terrenos à venda</option>
+        <option>Outro assunto</option>
+      </select>
+      <label>Bairro / Local</label>
+      <input type="text" id="bairro" placeholder="Ex: Sede, Cidade Baixa, Cachiungo">
+      <label>Mensagem</label>
+      <textarea id="msg" rows="7" placeholder="Ex: Preciso de 3m³ de betão amanhã"></textarea>
+      <a class="btn btn2" href="#" onclick="enviar(event)">ENVIAR NO WHATSAPP</a>
+    </div>
+
+    <!-- BOTÕES FINAIS -->
+    <a class="btn btn-tiktok" href="https://www.tiktok.com/@severinocotingoca" target="_blank" rel="noopener">▶
+      <span>MEU</span> <b>TIKTOK</b></a>
+    <a class="btn btn-wpp"
+      href="https://wa.me/244939634291?text=Ol%C3%A1%20S%C3%A9rgio%20Boy%2C%20vim%20da%20tua%20p%C3%A1gina"
+      target="_blank">💬 FALAR NO WHATSAPP</a>
+    <a class="btn btn-call" href="tel:+244939634291">📞 LIGAR AGORA - 939 634 291</a>
+
+  </div>
+
+  <footer>© 2026 Sérgio Boy - Cachiungo, Huambo, Angola</footer>
+
+
+  <script>
+function enviar(e){
+e.preventDefault();
+var nome=document.getElementById('nome').value.trim();
+var servico=document.getElementById('servico').value;
+var assunto=document.getElementById('assunto').value;
+var bairro=document.getElementById('bairro').value.trim();
+var msg=document.getElementById('msg').value.trim();
+if(!nome||!msg){alert('Preenche o teu nome e a mensagem.');return;}
+var texto="Olá Sérgio Boy, vim da tua página\n\nNome: "+nome+"\nServiço: "+servico+"\nAssunto: "+assunto+"\nBairro: "+bairro+"\nMensagem: "+msg;
+window.open("https://wa.me/244939634291?text="+encodeURIComponent(texto),'_blank');
+}
+
+
+
+
+    
+</script>
+</body>
+
+</html>
